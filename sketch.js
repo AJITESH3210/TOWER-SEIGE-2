@@ -90,16 +90,18 @@ function draw(){
 
 }
    
-function mouseDragged(){
-    if(gameState !== "launched" ){
-        Matter.Body.setPosition(bird.body, {x: mouseX , y: mouseY});
-    }
-}
+
 
 
 function mouseReleased(){
    gameState = "launched";
     slingshot.fly();
+}
+
+function mouseDragged(){
+    if(gameState !== "launched" ){
+        Matter.Body.setPosition(polygon1.body, {x: mouseX , y: mouseY});
+    }
 }
 
 

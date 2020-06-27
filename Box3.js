@@ -1,6 +1,8 @@
 class Box3 extends BaseClass {
     constructor(x, y, width, height){
       super(x,y,width,height);
+      this.Visibility = 255;
+
     }
     display(){
       if(this.body.speed < 3){
@@ -12,7 +14,7 @@ class Box3 extends BaseClass {
       push();
       this.Visiblity = this.Visiblity - 5;
       tint(255,this.Visiblity);
-      fill(63, 82, 255);
+      
       pop();
        }
 
