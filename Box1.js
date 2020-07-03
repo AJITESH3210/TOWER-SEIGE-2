@@ -1,7 +1,9 @@
 class Box1 extends BaseClass {
     constructor(x, y, width, height){
       super(x,y,width,height);
-      this.Visiblity = 255
+      this.Visibliity = 255;
+      this.image = loadImage("octagon.png");
+      this.image =this.body;
     }
     display(){
       if(this.body.speed < 3){
