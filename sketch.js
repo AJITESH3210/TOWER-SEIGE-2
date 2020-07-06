@@ -49,7 +49,7 @@ function setup(){
    // Matter.Bodies.polygon1(400,450,6,30);
     //polygon1 = Bodies.circle(50,200,20);
     World.add(world,polygon1);
-    slingshot = new SlingShot(polygon1.body, { x : 200  ,y : 200 } );
+    slingshot = new SlingShot(polygon1.body, { x : 200, y : 200 } );
 }
 
 function draw(){

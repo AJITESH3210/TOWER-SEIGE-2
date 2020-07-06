@@ -2,11 +2,11 @@ class Box3 extends BaseClass {
     constructor(x, y, width, height){
       super(x,y,width,height);
       this.Visibility = 255;
-      this.image = loadImage("octagon.png");
-      this.image =this.body;
+      this.image = loadImage("yellow final.png");
+      this.image = this.body;
     }
     display(){
-      if(this.body.speed < 3){
+      if(this.body.speed < 2){
         super.display();
         fill(63, 82, 255);
        }
